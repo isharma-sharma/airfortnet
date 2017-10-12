@@ -10,7 +10,7 @@
 // })()
 module.exports = {
   function () {
-    const x = document.getElementById('photos')
+    const photos = document.getElementById('photos')
     photos.onclick = function () {
       if (photos.style.animationPlayState === 'paused') {
         photos.style.animationPlayState = 'running'

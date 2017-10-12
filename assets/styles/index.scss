@@ -1,90 +1,48 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
+body {
+      position: relative;
+  }
+  .affix {
+      top: 20px;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}
 
-img {
-  position: relative;
-  // -webkit-animation: 4s linear 1s infinite  images;
-  //  animation: 4s linear 1s infinite  images;
-}
-/* @keyframes duration | timing-function | delay |
-iteration-count | direction | fill-mode | play-state | name */
-#photos{
-  left: 0;
-  right: 150px;
-  // -webkit-animation-: 4s linear 8s infinite forward images1;
-  //  animation: 4s linear 2s infinite  images1;
-  -webkit-animation-name: images1;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-play-state: paused;
-  // -webkit-animation-delay: 1s;
-}
-
-.photos img:nth-of-type(2) {
-  left: 150px;
-  right: 250px;
-  -webkit-animation: 4s linear 4s infinite images2;
-  animation: 4s linear 4s infinite images2;
-  animation-play-state: running;
-}
-
-.photos img:nth-of-type(3) {
-  left: 250px;
-  right: 350px;
-  -webkit-animation: 4s linear 8s infinite images3;
-  animation: 4s linear 8s infinite images3;
-  animation-play-state: running;
-}
-
-.photos img:nth-of-type(4) {
-  left: 350px;
-  -webkit-animation: 4s linear 12s infinite images4;
-  animation: 4s linear 12s infinite images4;
-  animation-play-state: running;
-  -webkit-animation-play-state: running;
-}
-@keyframes images1 {
-  from {
-    transform: scaleX(1);
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
   }
 
-  to {
-    transform: scaleX(2);
-    // transform: translate(200px, 0);
-  }
-}
-@keyframes images2 {
-  from {
-    transform: scaleX(2);
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
   }
 
-  to {
-    transform: scaleX(3);
-  }
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
 }
-@keyframes images3 {
-  from {
-    transform: scaleX(3);
-  }
 
-  to {
-    transform: scaleX(4);
-  }
-}
-@keyframes images4 {
-  from {
-    transform: scaleX(4);
-    transform: translate(200px, 0);
-  }
-
-  to {
-    transform: scaleX(5);
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
   }
 }
 
-.pause {
-  animation-play-state: paused;
-  -webkit-animation-play-state: paused;
-}
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
